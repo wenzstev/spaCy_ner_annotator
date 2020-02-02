@@ -13,7 +13,7 @@ def main(training_file=None, entity_type=None):
     complete_training_data = []
 
     if not training_file:
-        training_file = input("Please enter the filename of the data you wish to annotate: ")
+        training_file = Path(input("Please enter the filename of the data you wish to annotate: "))
 
     if not entity_type:
         entity_type = input("Please enter the name of the entity you wish to annotate for: ")
